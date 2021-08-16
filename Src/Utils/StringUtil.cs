@@ -29,7 +29,14 @@ namespace CrashCourse2021ExercisesDayOne.Utils
 
         internal string StringContains(string value1, string value2)
         {
-            throw new NotImplementedException();
+            if (value1.Contains(value2))
+            {
+                return new string("YES");
+            }
+            else
+            {
+                return new string("NO");
+            }
         }
 
         internal string StringToUpperCase(string value1)
@@ -53,9 +60,10 @@ namespace CrashCourse2021ExercisesDayOne.Utils
         {
             if (numbertoTest%2 == 0)
             {
-                throw new NotImplementedException();
+                return new string("EVEN");
             }
-            throw new NotImplementedException();
+
+            return new string("ODD");
         }
     }
 }
